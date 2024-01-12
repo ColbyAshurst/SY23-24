@@ -94,9 +94,11 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox2.Location = New System.Drawing.Point(627, 315)
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(618, 176)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(161, 123)
+        Me.PictureBox2.Size = New System.Drawing.Size(170, 149)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
         '
@@ -132,47 +134,47 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(277, 122)
+        Me.Label1.Location = New System.Drawing.Point(263, 122)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 20)
+        Me.Label1.Size = New System.Drawing.Size(82, 20)
         Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "best player"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(277, 172)
+        Me.Label2.Location = New System.Drawing.Point(259, 172)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 20)
+        Me.Label2.Size = New System.Drawing.Size(86, 20)
         Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "Team name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(277, 219)
+        Me.Label3.Location = New System.Drawing.Point(283, 219)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 20)
+        Me.Label3.Size = New System.Drawing.Size(62, 20)
         Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Label3"
+        Me.Label3.Text = "stadium"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(277, 279)
+        Me.Label4.Location = New System.Drawing.Point(288, 275)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 20)
+        Me.Label4.Size = New System.Drawing.Size(57, 20)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Label4"
+        Me.Label4.Text = "mascot"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(277, 346)
+        Me.Label5.Location = New System.Drawing.Point(266, 342)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 20)
+        Me.Label5.Size = New System.Drawing.Size(79, 20)
         Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Label5"
+        Me.Label5.Text = "current QB"
         '
         'OpenFileDialog1
         '
