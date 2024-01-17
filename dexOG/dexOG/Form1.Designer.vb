@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.textbox2 = New System.Windows.Forms.TextBox()
-        Me.textbox3 = New System.Windows.Forms.TextBox()
-        Me.textbox4 = New System.Windows.Forms.TextBox()
-        Me.textbox5 = New System.Windows.Forms.TextBox()
-        Me.textbox1 = New System.Windows.Forms.TextBox()
+        Me.field2 = New System.Windows.Forms.TextBox()
+        Me.field3 = New System.Windows.Forms.TextBox()
+        Me.field4 = New System.Windows.Forms.TextBox()
+        Me.field5 = New System.Windows.Forms.TextBox()
+        Me.field1 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -40,45 +40,49 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.firstbutton = New System.Windows.Forms.Button()
+        Me.previousbutton = New System.Windows.Forms.Button()
+        Me.nextbutton = New System.Windows.Forms.Button()
+        Me.lastbutton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'textbox2
+        'field2
         '
-        Me.textbox2.Location = New System.Drawing.Point(351, 165)
-        Me.textbox2.Name = "textbox2"
-        Me.textbox2.Size = New System.Drawing.Size(125, 27)
-        Me.textbox2.TabIndex = 0
+        Me.field2.Location = New System.Drawing.Point(351, 165)
+        Me.field2.Name = "field2"
+        Me.field2.Size = New System.Drawing.Size(125, 27)
+        Me.field2.TabIndex = 0
         '
-        'textbox3
+        'field3
         '
-        Me.textbox3.Location = New System.Drawing.Point(351, 212)
-        Me.textbox3.Name = "textbox3"
-        Me.textbox3.Size = New System.Drawing.Size(125, 27)
-        Me.textbox3.TabIndex = 1
+        Me.field3.Location = New System.Drawing.Point(351, 216)
+        Me.field3.Name = "field3"
+        Me.field3.Size = New System.Drawing.Size(125, 27)
+        Me.field3.TabIndex = 1
         '
-        'textbox4
+        'field4
         '
-        Me.textbox4.Location = New System.Drawing.Point(351, 272)
-        Me.textbox4.Name = "textbox4"
-        Me.textbox4.Size = New System.Drawing.Size(125, 27)
-        Me.textbox4.TabIndex = 2
+        Me.field4.Location = New System.Drawing.Point(351, 272)
+        Me.field4.Name = "field4"
+        Me.field4.Size = New System.Drawing.Size(125, 27)
+        Me.field4.TabIndex = 2
         '
-        'textbox5
+        'field5
         '
-        Me.textbox5.Location = New System.Drawing.Point(351, 339)
-        Me.textbox5.Name = "textbox5"
-        Me.textbox5.Size = New System.Drawing.Size(125, 27)
-        Me.textbox5.TabIndex = 3
+        Me.field5.Location = New System.Drawing.Point(351, 323)
+        Me.field5.Name = "field5"
+        Me.field5.Size = New System.Drawing.Size(125, 27)
+        Me.field5.TabIndex = 3
         '
-        'textbox1
+        'field1
         '
-        Me.textbox1.Location = New System.Drawing.Point(351, 115)
-        Me.textbox1.Name = "textbox1"
-        Me.textbox1.Size = New System.Drawing.Size(125, 27)
-        Me.textbox1.TabIndex = 4
+        Me.field1.Location = New System.Drawing.Point(351, 115)
+        Me.field1.Name = "field1"
+        Me.field1.Size = New System.Drawing.Size(125, 27)
+        Me.field1.TabIndex = 4
         '
         'PictureBox1
         '
@@ -152,7 +156,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(283, 219)
+        Me.Label3.Location = New System.Drawing.Point(283, 223)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 20)
         Me.Label3.TabIndex = 10
@@ -170,7 +174,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(266, 342)
+        Me.Label5.Location = New System.Drawing.Point(266, 330)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 20)
         Me.Label5.TabIndex = 12
@@ -180,11 +184,51 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'firstbutton
+        '
+        Me.firstbutton.Location = New System.Drawing.Point(81, 200)
+        Me.firstbutton.Name = "firstbutton"
+        Me.firstbutton.Size = New System.Drawing.Size(94, 29)
+        Me.firstbutton.TabIndex = 13
+        Me.firstbutton.Text = "First"
+        Me.firstbutton.UseVisualStyleBackColor = True
+        '
+        'previousbutton
+        '
+        Me.previousbutton.Location = New System.Drawing.Point(81, 248)
+        Me.previousbutton.Name = "previousbutton"
+        Me.previousbutton.Size = New System.Drawing.Size(94, 29)
+        Me.previousbutton.TabIndex = 14
+        Me.previousbutton.Text = "previous"
+        Me.previousbutton.UseVisualStyleBackColor = True
+        '
+        'nextbutton
+        '
+        Me.nextbutton.Location = New System.Drawing.Point(81, 296)
+        Me.nextbutton.Name = "nextbutton"
+        Me.nextbutton.Size = New System.Drawing.Size(94, 29)
+        Me.nextbutton.TabIndex = 15
+        Me.nextbutton.Text = "next"
+        Me.nextbutton.UseVisualStyleBackColor = True
+        '
+        'lastbutton
+        '
+        Me.lastbutton.Location = New System.Drawing.Point(81, 339)
+        Me.lastbutton.Name = "lastbutton"
+        Me.lastbutton.Size = New System.Drawing.Size(94, 29)
+        Me.lastbutton.TabIndex = 16
+        Me.lastbutton.Text = "last"
+        Me.lastbutton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lastbutton)
+        Me.Controls.Add(Me.nextbutton)
+        Me.Controls.Add(Me.previousbutton)
+        Me.Controls.Add(Me.firstbutton)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -192,11 +236,11 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.textbox1)
-        Me.Controls.Add(Me.textbox5)
-        Me.Controls.Add(Me.textbox4)
-        Me.Controls.Add(Me.textbox3)
-        Me.Controls.Add(Me.textbox2)
+        Me.Controls.Add(Me.field1)
+        Me.Controls.Add(Me.field5)
+        Me.Controls.Add(Me.field4)
+        Me.Controls.Add(Me.field3)
+        Me.Controls.Add(Me.field2)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
@@ -210,11 +254,11 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents textbox2 As TextBox
-    Friend WithEvents textbox3 As TextBox
-    Friend WithEvents textbox4 As TextBox
-    Friend WithEvents textbox5 As TextBox
-    Friend WithEvents textbox1 As TextBox
+    Friend WithEvents field2 As TextBox
+    Friend WithEvents field3 As TextBox
+    Friend WithEvents field4 As TextBox
+    Friend WithEvents field5 As TextBox
+    Friend WithEvents field1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents MenuStrip1 As MenuStrip
@@ -227,4 +271,8 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents firstbutton As Button
+    Friend WithEvents previousbutton As Button
+    Friend WithEvents nextbutton As Button
+    Friend WithEvents lastbutton As Button
 End Class
