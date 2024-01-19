@@ -11,6 +11,8 @@ Public Class Form1
         field4.Text = ""
         field5.Text = ""
         PictureBox1.Image = Nothing
+        current = count
+        count = count + 1
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -102,5 +104,9 @@ Public Class Form1
             current = count - 1
             ShowRecord(current)
         End If
+    End Sub
+
+    Private Sub BillsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BillsToolStripMenuItem.Click
+
     End Sub
 End Class
